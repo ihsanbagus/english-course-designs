@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Mastery | Documentation-Grade Learning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --brand-green: #18E299; --near-black: #0d0d0d; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: #fff; color: var(--near-black); }
+    h1,h2,h3 { font-weight: 600; letter-spacing: -0.02em; }
+    .mint-card { background: #fff; border: 1px solid rgba(0,0,0,0.05); border-radius: 16px; padding: 24px; box-shadow: rgba(0,0,0,0.03) 0px 2px 4px; transition: border-color .2s; }
+    .mint-card:hover { border-color: rgba(0,0,0,0.08); }
+    .btn-mint { background: var(--near-black); color: #fff; padding: 8px 24px; border-radius: 9999px; font-weight: 500; font-size: 15px; transition: opacity .15s; }
+    .btn-mint:hover { opacity: 0.9; }
+    .btn-mint-ghost { background: #fff; color: var(--near-black); padding: 8px 24px; border-radius: 9999px; font-weight: 500; font-size: 15px; border: 1px solid rgba(0,0,0,0.08); }
+    .mono { font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.6px; }
+    .hero-gradient { background: radial-gradient(ellipse at 50% 0%, rgba(24,226,153,0.12) 0%, transparent 60%); }
+  </style>
+</head>
+<body>
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-black/5">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
+      <span class="font-bold text-lg">English Mastery</span>
+      <div class="hidden md:flex gap-8 text-[15px] font-medium text-[#333]">
+        <a href="#features" class="hover:text-[#18E299] transition">Features</a>
+        <a href="#pricing" class="hover:text-[#18E299] transition">Pricing</a>
+        <a href="#" class="hover:text-[#18E299] transition">Docs</a>
+      </div>
+      <a href="#" class="btn-mint">Get Started</a>
+    </div>
+  </nav>
+
+  <header class="hero-gradient pt-24 pb-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-[#d4fae8] text-[#0fa76e] text-[13px] font-semibold mb-6">v2.0 — Now with AI Tutoring</span>
+      <h1 class="text-5xl md:text-7xl leading-[1.1] mb-6">Learn English like<br>you read <span class="text-[#18E299]">documentation.</span></h1>
+      <p class="text-xl text-[#666] max-w-2xl mx-auto mb-10 leading-relaxed">Structured, clear, and designed for builders. A curriculum that reads like your favorite docs — precise, practical, and always actionable.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-3">
+        <a href="#" class="btn-mint text-center">Start Building</a>
+        <a href="#" class="btn-mint-ghost text-center">View Docs</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="features" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="mono text-[#18E299] mb-4 block">FEATURES</span>
+        <h2 class="text-4xl md:text-5xl mb-4">Everything you need.<br>Nothing you don't.</h2>
+        <p class="text-[#666] max-w-xl mx-auto">A focused toolkit for language acquisition. No bloat, no distractions.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="mint-card">
+          <div class="w-10 h-10 rounded-full bg-[#d4fae8] flex items-center justify-center mb-4 text-lg">📖</div>
+          <h3 class="text-xl font-semibold mb-2">Structured Curriculum</h3>
+          <p class="text-sm text-[#666] leading-relaxed">A1 to C2 path with clear milestones. Know exactly where you are and what's next.</p>
+        </div>
+        <div class="mint-card">
+          <div class="w-10 h-10 rounded-full bg-[#d4fae8] flex items-center justify-center mb-4 text-lg">🤖</div>
+          <h3 class="text-xl font-semibold mb-2">AI Conversation Partner</h3>
+          <p class="text-sm text-[#666] leading-relaxed">Practice 24/7 with an AI that corrects grammar, suggests vocabulary, and adapts to your level.</p>
+        </div>
+        <div class="mint-card">
+          <div class="w-10 h-10 rounded-full bg-[#d4fae8] flex items-center justify-center mb-4 text-lg">🎯</div>
+          <h3 class="text-xl font-semibold mb-2">Spaced Repetition</h3>
+          <p class="text-sm text-[#666] leading-relaxed">Science-backed review system that ensures long-term retention of vocabulary and grammar.</p>
+        </div>
+        <div class="mint-card">
+          <div class="w-10 h-10 rounded-full bg-[#d4fae8] flex items-center justify-center mb-4 text-lg">📊</div>
+          <h3 class="text-xl font-semibold mb-2">Progress Analytics</h3>
+          <p class="text-sm text-[#666] leading-relaxed">Detailed dashboards showing your strengths, weaknesses, and improvement over time.</p>
+        </div>
+        <div class="mint-card">
+          <div class="w-10 h-10 rounded-full bg-[#d4fae8] flex items-center justify-center mb-4 text-lg">👥</div>
+          <h3 class="text-xl font-semibold mb-2">Live Group Sessions</h3>
+          <p class="text-sm text-[#666] leading-relaxed">Weekly small-group practice with native speakers. Max 6 students per session.</p>
+        </div>
+        <div class="mint-card">
+          <div class="w-10 h-10 rounded-full bg-[#d4fae8] flex items-center justify-center mb-4 text-lg">🏆</div>
+          <h3 class="text-xl font-semibold mb-2">Certification</h3>
+          <p class="text-sm text-[#666] leading-relaxed">Earn recognized certificates at each level. CEFR-aligned assessments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-20 bg-[#fafafa]">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="mono text-[#18E299] mb-4 block">PRICING</span>
+        <h2 class="text-4xl mb-4">Simple, transparent pricing.</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div class="mint-card">
+          <h3 class="text-lg font-semibold mb-1">Community</h3>
+          <div class="text-4xl font-bold mb-4">$0<span class="text-base font-normal text-[#666]">/mo</span></div>
+          <ul class="text-sm space-y-2 mb-6 text-[#666]">
+            <li>✓ Basic curriculum access</li>
+            <li>✓ AI conversation (50/day)</li>
+            <li>✓ Community forum</li>
+          </ul>
+          <a href="#" class="btn-mint-ghost block text-center">Get Started</a>
+        </div>
+        <div class="mint-card border-[#18E299]/30">
+          <h3 class="text-lg font-semibold mb-1">Pro</h3>
+          <div class="text-4xl font-bold mb-4">$79<span class="text-base font-normal text-[#666]">/mo</span></div>
+          <ul class="text-sm space-y-2 mb-6 text-[#666]">
+            <li>✓ Full curriculum + analytics</li>
+            <li>✓ Unlimited AI conversations</li>
+            <li>✓ Weekly live sessions</li>
+            <li>✓ Certification included</li>
+          </ul>
+          <a href="#" class="btn-mint block text-center">Start Free Trial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12 border-t border-black/5">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <span class="font-bold">English Mastery</span>
+      <div class="flex gap-6 text-sm text-[#666]">
+        <a href="#" class="hover:text-[#18E299] transition">Twitter</a>
+        <a href="#" class="hover:text-[#18E299] transition">GitHub</a>
+        <a href="#" class="hover:text-[#18E299] transition">Discord</a>
+      </div>
+      <span class="text-sm text-[#888]">© 2025</span>
+    </div>
+  </footer>
+</body>
+</html>

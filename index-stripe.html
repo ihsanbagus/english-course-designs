@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Mastery | Global Excellence</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --stripe-purple: #533afd;
+      --navy-deep: #061b31;
+      --slate-body: #64748d;
+      --border-light: #e5edf5;
+      --shadow-blue: rgba(50,50,93,0.25);
+    }
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      color: var(--slate-body);
+      background-color: #ffffff;
+    }
+    h1, h2, h3 { color: var(--navy-deep); font-weight: 300; }
+    .stripe-card {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      box-shadow: var(--shadow-blue) 0px 30px 45px -30px, rgba(0,0,0,0.1) 0px 18px 36px -18px;
+      transition: transform 0.2s;
+    }
+    .stripe-card:hover { transform: translateY(-2px); }
+    .btn-stripe {
+      background-color: var(--stripe-purple);
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-weight: 500;
+      box-shadow: 0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08);
+      transition: all 0.15s ease;
+    }
+    .btn-stripe:hover { background-color: #4434d4; transform: translateY(-1px); box-shadow: 0 7px 14px rgba(50,50,93,0.1), 0 3px 6px rgba(0,0,0,0.08); }
+    .mono { font-family: 'Source Code Pro', monospace; font-size: 13px; font-weight: 500; color: var(--stripe-purple); }
+  </style>
+</head>
+<body class="antialiased">
+  <nav class="sticky top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
+      <span class="text-xl font-bold tracking-tight text-indigo-600">English Mastery</span>
+      <div class="hidden md:flex gap-8 text-[15px] font-medium text-slate-600">
+        <a href="#" class="hover:text-indigo-600 transition">Solutions</a>
+        <a href="#" class="hover:text-indigo-600 transition">Developers</a>
+        <a href="#" class="hover:text-indigo-600 transition">Resources</a>
+      </div>
+      <button class="btn-stripe">Sign In</button>
+    </div>
+  </nav>
+
+  <header class="pt-32 pb-24 px-6 overflow-hidden">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-5xl md:text-6xl leading-[1.1] mb-6 tracking-tight">The communication <br> infrastructure for <span class="text-indigo-600">the next generation.</span></h1>
+        <p class="text-xl mb-10 leading-relaxed text-slate-500">Master English through a high-performance curriculum designed for the world's most ambitious professionals.</p>
+        <div class="flex gap-4">
+          <button class="btn-stripe px-8">Start now</button>
+          <button class="text-indigo-600 font-semibold flex items-center gap-2 hover:opacity-70">Contact sales <svg width="12" height="12" viewBox="0 0 12 12"><path d="M1 6h10M6 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="stripe-card p-4 bg-slate-900 rounded-lg">
+          <div class="flex gap-2 mb-4"><div class="w-3 h-3 rounded-full bg-red-500"></div><div class="w-3 h-3 rounded-full bg-yellow-500"></div><div class="w-3 h-3 rounded-full bg-green-500"></div></div>
+          <div class="mono text-indigo-300">
+            <p>> const student = new MasteryStudent();</p>
+            <p>> student.improve('fluency');</p>
+            <p class="text-emerald-400">// Analysis: 40% improvement detected</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-24 bg-slate-50 border-y border-slate-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="space-y-4">
+          <h3 class="text-xl font-medium">Bespoke Curriculum</h3>
+          <p class="text-sm leading-relaxed text-slate-500">Tailored learning paths that evolve with your progress, ensuring maximum efficiency.</p>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-xl font-medium">Native Proficiency</h3>
+          <p class="text-sm leading-relaxed text-slate-500">Direct exposure to native speakers and real-world high-stakes communication scenarios.</p>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-xl font-medium">Global Certification</h3>
+          <p class="text-sm leading-relaxed text-slate-500">Recognized credentials that validate your expertise in international environments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12">
+    <div class="max-w-6xl mx-auto px-6 text-[13px] font-medium text-slate-400">
+      © English Mastery. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

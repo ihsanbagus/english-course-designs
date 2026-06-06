@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Mastery | Open Source Learning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --supabase-green: #3ecf8e; --green-link: #00c573; --dark-bg: #171717; --darker-bg: #0f0f0f; --border-dark: #2e2e2e; --text-primary: #fafafa; --text-secondary: #b4b4b4; --text-muted: #898989; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: var(--dark-bg); color: var(--text-secondary); font-weight: 400; }
+    h1,h2,h3 { color: var(--text-primary); font-weight: 400; }
+    .supa-display { line-height: 1.0; }
+    .btn-supa { background: var(--darker-bg); color: var(--text-primary); padding: 8px 32px; border-radius: 9999px; font-weight: 500; font-size: 14px; border: 1px solid var(--text-primary); transition: opacity .15s; }
+    .btn-supa:hover { opacity: 0.85; }
+    .btn-supa-ghost { background: var(--darker-bg); color: var(--text-primary); padding: 8px 32px; border-radius: 9999px; font-weight: 500; font-size: 14px; border: 1px solid var(--border-dark); opacity: 0.8; }
+    .supa-card { background: var(--dark-bg); border: 1px solid var(--border-dark); border-radius: 16px; }
+    .mono { font-family: 'Source Code Pro', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 1.2px; }
+  </style>
+</head>
+<body>
+  <nav class="border-b border-[#242424] bg-[#171717]">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
+      <div class="flex items-center gap-8">
+        <span class="font-bold text-[var(--supabase-green)] tracking-tight">▲ English Mastery</span>
+        <div class="hidden md:flex gap-6 text-[14px] font-medium text-[var(--text-secondary)]">
+          <a href="#" class="hover:text-white transition">Products</a>
+          <a href="#" class="hover:text-white transition">Docs</a>
+          <a href="#" class="hover:text-white transition">Pricing</a>
+        </div>
+      </div>
+      <div class="flex gap-3">
+        <a href="#" class="btn-supa-ghost">Sign In</a>
+        <a href="#" class="btn-supa">Start Learning</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="pt-28 pb-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="supa-display text-5xl md:text-7xl mb-6">The open source<br>approach to <span style="color: var(--supabase-green);">fluency.</span></h1>
+      <p class="text-xl text-[var(--text-muted)] max-w-2xl mx-auto mb-10 leading-relaxed">A transparent, community-driven learning platform. Open curriculum. Open results. Built for developers who want to master English.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-3">
+        <a href="#" class="btn-supa text-center">Start your project</a>
+        <a href="#" class="btn-supa-ghost text-center">View documentation</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-20 border-t border-[#242424]">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl text-center mb-4">Built for developers.</h2>
+      <p class="text-center text-[var(--text-muted)] mb-16 max-w-xl mx-auto">APIs, SDKs, and integrations for your learning workflow.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="supa-card p-8">
+          <div class="mono text-[var(--supabase-green)] mb-4">CURRICULUM</div>
+          <h3 class="text-xl mb-3">Structured Paths</h3>
+          <p class="text-sm text-[var(--text-muted)] leading-relaxed">A1 to C2 with clear milestones. RESTful progress tracking. Webhook notifications on completion.</p>
+        </div>
+        <div class="supa-card p-8">
+          <div class="mono text-[var(--supabase-green)] mb-4">AI TUTOR</div>
+          <h3 class="text-xl mb-3">Real-time Practice</h3>
+          <p class="text-sm text-[var(--text-muted)] leading-relaxed">WebSocket-powered conversation practice. Streaming responses. Context-aware corrections.</p>
+        </div>
+        <div class="supa-card p-8">
+          <div class="mono text-[var(--supabase-green)] mb-4">ANALYTICS</div>
+          <h3 class="text-xl mb-3">Progress Dashboard</h3>
+          <p class="text-sm text-[var(--text-muted)] leading-relaxed">Real-time analytics on your learning. Vocabulary growth, grammar accuracy, speaking fluency scores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 border-t border-[#242424]">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="supa-card p-6 bg-[#0f0f0f]">
+        <div class="flex gap-2 mb-4"><div class="w-3 h-3 rounded-full bg-[#ff5f56]"></div><div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div><div class="w-3 h-3 rounded-full bg-[#27ca40]"></div></div>
+        <div class="mono text-[var(--text-muted)] space-y-1">
+          <p style="color: var(--supabase-green);">$ npm install @english-mastery/sdk</p>
+          <p>import &#123; Mastery &#123; from '@english-mastery/sdk'</p>
+          <p>const client = new Mastery(&#123; apiKey: process.env.MASTERY_API_KEY &#125;)</p>
+          <p>const progress = await client.progress.get()</p>
+          <p style="color: var(--supabase-green);">// Progress: 67% — B2 Level</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 border-t border-[#242424]">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl mb-4">Trusted by open source teams.</h2>
+      <div class="flex flex-wrap justify-center gap-8 mt-12 text-[var(--text-muted)] font-medium text-sm">
+        <span>REACT</span><span>VUE</span><span>SVELTE</span><span>NEXT.JS</span><span>NUXT</span><span>REMIX</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12 border-t border-[#242424]">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <span class="mono text-[var(--supabase-green)]">▲ ENGLISH MASTERY</span>
+      <div class="flex gap-6 text-sm text-[var(--text-muted)]">
+        <a href="#" class="hover:text-white transition">Twitter</a>
+        <a href="#" class="hover:text-white transition">GitHub</a>
+        <a href="#" class="hover:text-white transition">Discord</a>
+      </div>
+      <span class="text-sm text-[var(--text-muted)]">© 2025</span>
+    </div>
+  </footer>
+</body>
+</html>

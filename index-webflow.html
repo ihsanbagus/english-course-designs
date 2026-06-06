@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Mastery | Build Without Limits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --wf-blue: #146ef5; --wf-purple: #7a3dff; --wf-pink: #ed52cb; --wf-green: #00d722; --near-black: #080808; --border-gray: #d8d8d8; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: #fff; color: var(--near-black); }
+    h1,h2,h3 { font-weight: 600; }
+    .wf-display { letter-spacing: -0.01em; line-height: 1.04; }
+    .btn-wf { background: var(--near-black); color: #fff; padding: 10px 20px; border-radius: 4px; font-weight: 500; font-size: 16px; transition: transform .15s; }
+    .btn-wf:hover { transform: translateX(6px); }
+    .btn-wf-blue { background: var(--wf-blue); color: #fff; padding: 10px 20px; border-radius: 4px; font-weight: 500; font-size: 16px; }
+    .wf-card { border: 1px solid var(--border-gray); border-radius: 8px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 12.8px; font-weight: 550; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <nav class="border-b border-[var(--border-gray)] bg-white">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
+      <div class="flex items-center gap-8">
+        <span class="font-bold text-lg">English Mastery</span>
+        <div class="hidden md:flex gap-6 text-[16px] font-medium text-[#5a5a5a]">
+          <a href="#" class="hover:text-black transition">Platform</a>
+          <a href="#" class="hover:text-black transition">Solutions</a>
+          <a href="#" class="hover:text-black transition">Pricing</a>
+        </div>
+      </div>
+      <div class="flex gap-3">
+        <a href="#" class="btn-wf-blue">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="pt-28 pb-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="wf-display text-6xl md:text-[80px] mb-6">Build your<br><span style="color: var(--wf-blue);">fluency.</span> Without limits.</h1>
+      <p class="text-xl md:text-2xl text-[#363636] max-w-2xl mx-auto mb-10 leading-relaxed">The visual learning platform that grows with you. Design your curriculum. Track your progress. Achieve mastery.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-3">
+        <a href="#" class="btn-wf-blue text-center">Start Building</a>
+        <a href="#" class="btn-wf text-center">Watch Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-20 bg-[#fafafa]">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="mono mb-4 block" style="color: var(--wf-blue);">FEATURES</span>
+        <h2 class="text-4xl md:text-5xl mb-4">Everything you need to master English.</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="wf-card p-8 bg-white">
+          <div class="w-10 h-10 rounded bg-[#e8f0fe] flex items-center justify-center mb-4" style="color: var(--wf-blue);">✦</div>
+          <h3 class="text-xl font-semibold mb-2">Visual Curriculum</h3>
+          <p class="text-sm text-[#5a5a5a] leading-relaxed">Drag-and-drop lesson builder. Customize your learning path visually.</p>
+        </div>
+        <div class="wf-card p-8 bg-white">
+          <div class="w-10 h-10 rounded bg-[#f0e6ff] flex items-center justify-center mb-4" style="color: var(--wf-purple);">◆</div>
+          <h3 class="text-xl font-semibold mb-2">AI-Powered Practice</h3>
+          <p class="text-sm text-[#5a5a5a] leading-relaxed">Intelligent conversation partner that adapts to your weaknesses.</p>
+        </div>
+        <div class="wf-card p-8 bg-white">
+          <div class="w-10 h-10 rounded bg-[#e6ffe9] flex items-center justify-center mb-4" style="color: var(--wf-green);">●</div>
+          <h3 class="text-xl font-semibold mb-2">Real-time Analytics</h3>
+          <p class="text-sm text-[#5a5a5a] leading-relaxed">Beautiful dashboards showing your growth across all skill areas.</p>
+        </div>
+        <div class="wf-card p-8 bg-white">
+          <div class="w-10 h-10 rounded bg-[#fff0e6] flex items-center justify-center mb-4" style="color: #ff6b00;">▲</div>
+          <h3 class="text-xl font-semibold mb-2">Live Collaboration</h3>
+          <p class="text-sm text-[#5a5a5a] leading-relaxed">Practice with peers in real-time. Group sessions with shared workspaces.</p>
+        </div>
+        <div class="wf-card p-8 bg-white">
+          <div class="w-10 h-10 rounded bg-[#ffe6f0] flex items-center justify-center mb-4" style="color: var(--wf-pink);">♥</div>
+          <h3 class="text-xl font-semibold mb-2">Content Library</h3>
+          <p class="text-sm text-[#5a5a5a] leading-relaxed">10,000+ lessons, articles, and exercises. All levels, all topics.</p>
+        </div>
+        <div class="wf-card p-8 bg-white">
+          <div class="w-10 h-10 rounded bg-[#fffbe6] flex items-center justify-center mb-4" style="color: #ffae13;">★</div>
+          <h3 class="text-xl font-semibold mb-2">Certification</h3>
+          <p class="text-sm text-[#5a5a5a] leading-relaxed">Industry-recognized certificates. Share on LinkedIn with one click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl mb-6">Start building today.</h2>
+      <p class="text-[#5a5a5a] mb-10 text-lg">Free for individuals. Scale as you grow.</p>
+      <a href="#" class="btn-wf-blue inline-block text-lg px-10 py-4">Get Started Free</a>
+    </div>
+  </section>
+
+  <footer class="py-12 border-t border-[var(--border-gray)]">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <span class="font-bold">English Mastery</span>
+      <div class="flex gap-6 text-sm text-[#5a5a5a]">
+        <a href="#" class="hover:text-black transition">Twitter</a>
+        <a href="#" class="hover:text-black transition">YouTube</a>
+        <a href="#" class="hover:text-black transition">Discord</a>
+      </div>
+      <span class="text-sm text-[#ababab]">© 2025</span>
+    </div>
+  </footer>
+</body>
+</html>

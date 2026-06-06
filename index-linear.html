@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Mastery | Precision Learning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-deep: #08090a;
+      --bg-panel: #0f1011;
+      --bg-elevated: #191a1b;
+      --text-primary: #f7f8f8;
+      --text-secondary: #d0d6e0;
+      --text-muted: #8a8f98;
+      --brand-indigo: #5e6ad2;
+      --accent-violet: #7170ff;
+      --border-subtle: rgba(255, 255, 255, 0.05);
+      --border-standard: rgba(255, 255, 255, 0.08);
+    }
+    body {
+      background-color: var(--bg-deep);
+      color: var(--text-secondary);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-feature-settings: "cv01", "ss03";
+    }
+    .linear-display {
+      font-weight: 510;
+      letter-spacing: -0.022em;
+      color: var(--text-primary);
+      line-height: 1.1;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-standard);
+      border-radius: 8px;
+      transition: background 0.2s ease;
+    }
+    .glass-card:hover {
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .btn-brand {
+      background-color: var(--brand-indigo);
+      color: white;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 510;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+    .btn-brand:hover {
+      background-color: var(--accent-violet);
+    }
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-standard);
+      color: var(--text-primary);
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 510;
+      font-size: 14px;
+    }
+    .mono { font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+  </style>
+</head>
+<body class="antialiased">
+  <nav class="fixed top-0 w-full z-50 border-b border-[rgba(255,255,255,0.05)] bg-[#08090a]/80 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 h-14 flex justify-between items-center">
+      <div class="flex items-center gap-8">
+        <span class="linear-display text-sm tracking-widest uppercase">Mastery</span>
+        <div class="hidden md:flex gap-6 text-[13px] font-[510] text-var(--text-muted)">
+          <a href="#" class="hover:text-white transition">Method</a>
+          <a href="#" class="hover:text-white transition">Programs</a>
+          <a href="#" class="hover:text-white transition">Pricing</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="text-[13px] font-[510] hover:text-white transition">Log in</a>
+        <button class="btn-brand">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-32 pb-20 px-6">
+    <div class="max-w-4xl mx-auto text-center mb-24">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[rgba(255,255,255,0.1)] bg-white/5 text-[11px] font-[510] text-var(--brand-indigo) mb-8">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#7170ff] animate-pulse"></span>
+        ENROLLMENT OPEN FOR 2025
+      </div>
+      <h1 class="linear-display text-5xl md:text-7xl mb-6">Language learning <br> engineered for <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-gray-500">influence.</span></h1>
+      <p class="text-lg md:text-xl text-var(--text-muted) max-w-2xl mx-auto mb-10 leading-relaxed">
+        Streamline your path to English fluency with a curriculum built on linguistic precision and high-stakes communication.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <button class="btn-brand text-base py-3 px-8">Start your assessment</button>
+        <button class="btn-ghost text-base py-3 px-8">View the curriculum</button>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 mb-32">
+      <div class="glass-card p-8">
+        <div class="mono text-var(--brand-indigo) mb-4">01. FOUNDATION</div>
+        <h3 class="linear-display text-xl mb-3">Linguistic Core</h3>
+        <p class="text-sm text-var(--text-muted) leading-relaxed">Master the structural patterns that allow for effortless, error-free expression in any professional setting.</p>
+      </div>
+      <div class="glass-card p-8">
+        <div class="mono text-var(--brand-indigo) mb-4">02. PERFORMANCE</div>
+        <h3 class="linear-display text-xl mb-3">High-Stakes Rhetoric</h3>
+        <p class="text-sm text-var(--text-muted) leading-relaxed">Advanced negotiation and persuasion techniques used by global leaders to drive outcomes.</p>
+      </div>
+      <div class="glass-card p-8">
+        <div class="mono text-var(--brand-indigo) mb-4">03. COCHING</div>
+        <h3 class="linear-display text-xl mb-3">Executive Presence</h3>
+        <p class="text-sm text-var(--text-muted) leading-relaxed">1:1 coaching focused on cultural nuances, public speaking, and building professional authority.</p>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto border border-var(--border-standard) rounded-xl overflow-hidden bg-white/5 p-4">
+      <div class="border border-var(--border-standard) rounded-lg overflow-hidden bg-[#010102]">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Dashboard" class="opacity-80 grayscale hover:grayscale-0 transition duration-700">
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-var(--border-subtle) py-12 bg-[#08090a]">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="text-[12px] text-var(--text-muted) mono">© 2025 ENGLISH MASTERY / BUILT FOR PRECISION</div>
+      <div class="flex gap-8 text-[12px] font-[510] text-var(--text-muted)">
+        <a href="#" class="hover:text-white transition">Twitter</a>
+        <a href="#" class="hover:text-white transition">GitHub</a>
+        <a href="#" class="hover:text-white transition">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

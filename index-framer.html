@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Mastery | Design Your Fluency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Azeret+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --framer-blue: #0099ff; --void-black: #000; --muted-silver: #a6a6a6; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: var(--void-black); color: #fff; font-weight: 400; }
+    h1,h2,h3 { font-weight: 500; }
+    .framer-display { letter-spacing: -0.05em; line-height: 0.95; }
+    .btn-framer { background: #fff; color: #000; padding: 10px 28px; border-radius: 100px; font-weight: 500; font-size: 15px; transition: transform .15s; }
+    .btn-framer:hover { transform: scale(0.95); }
+    .btn-framer-ghost { background: rgba(255,255,255,0.1); color: #fff; padding: 10px 28px; border-radius: 40px; font-weight: 500; font-size: 15px; }
+    .framer-card { background: #090909; border-radius: 12px; box-shadow: rgba(0,153,255,0.15) 0 0 0 1px; }
+    .mono { font-family: 'Azeret Mono', monospace; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
+      <span class="font-semibold text-lg tracking-tight">English Mastery</span>
+      <div class="hidden md:flex gap-8 text-[15px] font-medium text-[#a6a6a6]">
+        <a href="#" class="hover:text-white transition">Features</a>
+        <a href="#" class="hover:text-white transition">Showcase</a>
+        <a href="#" class="hover:text-white transition">Pricing</a>
+      </div>
+      <a href="#" class="btn-framer-ghost">Get Started</a>
+    </div>
+  </nav>
+
+  <header class="pt-36 pb-24 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="framer-display text-6xl md:text-[110px] mb-8">Design your<br><span style="color: var(--framer-blue);">fluency.</span></h1>
+      <p class="text-xl text-[#a6a6a6] max-w-2xl mx-auto mb-12 leading-relaxed">The most beautiful way to learn English. Crafted for designers, developers, and creative professionals who demand excellence.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#" class="btn-framer text-center">Start Creating</a>
+        <a href="#" class="btn-framer-ghost text-center">Watch Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-6xl text-center mb-4">Built for creators.</h2>
+      <p class="text-center text-[#a6a6a6] mb-16 max-w-xl mx-auto">Every interaction is designed. Every lesson is crafted. No templates. No shortcuts.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="framer-card p-8">
+          <div class="mono text-[var(--framer-blue)] mb-4">CRAFT</div>
+          <h3 class="text-2xl mb-3">Visual Learning</h3>
+          <p class="text-sm text-[#a6a6a6] leading-relaxed">Interactive lessons with motion, animation, and visual storytelling that makes concepts stick.</p>
+        </div>
+        <div class="framer-card p-8">
+          <div class="mono text-[var(--framer-blue)] mb-4">ITERATE</div>
+          <h3 class="text-2xl mb-3">Adaptive Feedback</h3>
+          <p class="text-sm text-[#a6a6a6] leading-relaxed">Real-time pronunciation analysis and grammar correction powered by speech AI.</p>
+        </div>
+        <div class="framer-card p-8">
+          <div class="mono text-[var(--framer-blue)] mb-4">SHIP</div>
+          <h3 class="text-2xl mb-3">Portfolio Projects</h3>
+          <p class="text-sm text-[#a6a6a6] leading-relaxed">Build real-world projects — presentations, emails, reports — that showcase your skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-6 border-t border-white/5">
+    <div class="max-w-6xl mx-auto">
+      <div class="framer-card overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Learning" class="w-full opacity-60 grayscale hover:grayscale-0 transition duration-700">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-5xl md:text-7xl mb-6">Ready to<br>create?</h2>
+      <p class="text-[#a6a6a6] mb-10 text-lg">Join 10,000+ professionals who chose mastery.</p>
+      <a href="#" class="btn-framer inline-block">Start Your Journey</a>
+    </div>
+  </section>
+
+  <footer class="py-12 border-t border-white/5">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <span className="font-semibold">English Mastery</span>
+      <div class="flex gap-6 text-sm text-[#a6a6a6]">
+        <a href="#" class="hover:text-white transition">Twitter</a>
+        <a href="#" class="hover:text-white transition">Instagram</a>
+        <a href="#" class="hover:text-white transition">Dribbble</a>
+      </div>
+      <span class="text-sm text-[#a6a6a6]">© 2025</span>
+    </div>
+  </footer>
+</body>
+</html>

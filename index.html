@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kursus Bahasa Inggris | English Mastery</title>
+  <style>
+    :root {
+      --yellow: #FFE500;
+      --red: #FF2D2D;
+      --black: #0A0A0A;
+      --white: #FAFAFA;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--yellow);
+      color: var(--black);
+      font-family: 'Space Mono', 'Courier New', monospace;
+      line-height: 1.4;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    h1, h2, h3, .display { font-family: 'Archivo Black', Impact, sans-serif; text-transform: uppercase; }
+    .navbar {
+      background: var(--black);
+      color: var(--yellow);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+    .navbar a { color: var(--yellow); text-decoration: none; margin-left: 20px; }
+    .hero {
+      padding: 80px 0;
+      border-bottom: 5px solid var(--black);
+    }
+    .hero .container { display: flex; align-items: center; gap: 40px; }
+    .hero-text { flex: 1; }
+    .hero-img { flex: 1; }
+    .hero-img img { width: 100%; filter: grayscale; transition: filter .3s; }
+    .hero-img img:hover { filter: grayscale(0); }
+    .btn-brutal {
+      background: var(--red);
+      color: var(--white);
+      border: 3px solid var(--black);
+      box-shadow: 6px 6px 0px var(--black);
+      padding: 15px 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .btn-brutal:hover {
+      box-shadow: 3px 3px 0px var(--black);
+      transform: translate(3px, 3px);
+    }
+    .brutal-card {
+      background: var(--white);
+      border: 3px solid var(--black);
+      box-shadow: 8px 8px 0px var(--black);
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+    .brutal-card:hover {
+      box-shadow: 4px 4px 0px var(--black);
+      transform: translate(4px, 4px);
+    }
+    .stats { display: flex; gap: 40px; margin-top: 40px; }
+    .stat-item { text-align: center; }
+    .stat-number { font-size: 36px; font-weight: bold; color: var(--red); }
+    .section { padding: 80px 0; }
+    .section-title { text-align: center; margin-bottom: 60px; }
+    .section-title:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 5px;
+      background: var(--red);
+      margin: 20px auto;
+    }
+    .courses { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+    .course-card { position: relative; }
+    .price-tag {
+      position: absolute;
+      top: -15px;
+      right: 20px;
+      background: var(--black);
+      color: var(--yellow);
+      padding: 5px 15px;
+      font-weight: bold;
+      transform: rotate(-2deg);
+    }
+    .testimonials { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .testimonial { text-align: center; }
+    .testimonial-stars { color: var(--red); font-size: 20px; }
+    .contact-form { max-width: 600px; margin: 0 auto; }
+    .form-group { margin-bottom: 20px; }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%;
+      padding: 15px;
+      border: 3px solid var(--black);
+      background: var(--white);
+      font-family: inherit;
+    }
+    .marquee {
+      background: var(--black);
+      color: var(--yellow);
+      padding: 10px 0;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+    .footer {
+      background: var(--black);
+      color: var(--yellow);
+      padding: 40px 0;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .hero .container { flex-direction: column; }
+      .testimonials { grid-template-columns: 1fr; }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <strong>English Mastery</strong>
+      <div><a href="#courses">Kursus</a><a href="#features">Fitur</a><a href="#testimonials">Ulasan</a><a href="#contact">Daftar</a></div>
+    </div>
+  </nav>
+
+  <div class="marquee">Khusus Siswa Baru! Diskon 40% - Paket Lengkap Mulai Rp 350.000</div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1 class="display" style="font-size: 48px; margin-bottom: 20px;">Master English Fluently</h1>
+        <p style="font-size: 20px; margin-bottom: 30px;">Belajar bahasa Inggris online dengan metode langsung ke percakapan. Native speaker teacher. Siap untuk TOEFL, IELTS, atau kerja global.</p>
+        <div style="margin-bottom: 40px;">
+          <a href="#contact" class="btn-brutal">Daftar Sekarang</a>
+        </div>
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-number">10.000+</div>
+            <div>Siswa Lulus</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">95%</div>
+            <div>Kenaikan IELTS</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24jam</div>
+            <div>Dukungan Mentor</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1573496359112-1c5e27d4cbf6?w=600" alt="English Learning">
+      </div>
+    </div>
+  </section>
+
+  <section id="courses" class="section">
+    <div class="container">
+      <h2 class="section-title">Pilih Paket Anda</h2>
+      <div class="courses">
+        <div class="brutal-card course-card">
+          <div class="price-tag">Rp 350K</div>
+          <h3 style="margin-bottom: 15px;">Basic Level</h3>
+          <ul style="margin-bottom: 20px;">
+            <li>✓ 5x pertemuan/minggu</li>
+            <li>✓ Grammar Dasar</li>
+            <li>✓ Vocabulary 500 kata</li>
+            <li>✓ Sertifikat Penyelesaian</li>
+          </ul>
+          <a href="#contact" class="btn-brutal">Pilih Paket</a>
+        </div>
+        <div class="brutal-card course-card">
+          <div class="price-tag">Rp 650K</div>
+          <h3 style="margin-bottom: 15px;">Intensive Level</h3>
+          <ul style="margin-bottom: 20px;">
+            <li>✓ 10x pertemuan/minggu</li>
+            <li>✓ Semua Basic Termasuk</li>
+            <li>✓ Conversation Practice</li>
+            <li>✓ IELTS/TOEFL Prep</li>
+            <li>✓ 1:1 Mentor Session</li>
+          </ul>
+          <a href="#contact" class="btn-brutal">Pilih Paket</a>
+        </div>
+        <div class="brutal-card course-card">
+          <div class="price-tag">Rp 1.200K</div>
+          <h3 style="margin-bottom: 15px;">Premium Level</h3>
+          <ul style="margin-bottom: 20px;">
+            <li>✓ Semua Intensive Termasuk</li>
+            <li>✓ Private Class</li>
+            <li>✓ Resume Review</li>
+            <li>✓ Job Interview Prep</li>
+            <li>✓ Lifetime Access Materials</li>
+          </ul>
+          <a href="#contact" class="btn-brutal">Pilih Paket</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section" style="background: var(--white);">
+    <div class="container">
+      <h2 class="section-title">Mengapa Pilih Kami?</h2>
+      <div class="testimonials">
+        <div class="brutal-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Teacher-nya ramah, metode praktis. English saya naik 2 level dalam 2 bulan!"</p>
+          <p style="margin-top: 10px;"><strong>- Siti, Mahasiswa UI</strong></p>
+        </div>
+        <div class="brutal-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Metode conversation langsung beneran bantu. TOEFL saya 600+"</p>
+          <p style="margin-top: 10px;"><strong>- Ahmad, Engineer</strong></p>
+        </div>
+        <div class="brutal-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Native speaker teacher-nya asli, enak belajar. Recommended banget!"</p>
+          <p style="margin-top: 10px;"><strong>- Dewi, Freelancer</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Daftar Sekarang</h2>
+      <div class="contact-form">
+        <form id="registrationForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Nama Lengkap" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" placeholder="No WhatsApp" required>
+          </div>
+          <div class="form-group">
+            <select id="level">
+              <option value="">Pilih Level</option>
+              <option value="basic">Basic Level</option>
+              <option value="intensive">Intensive Level</option>
+              <option value="premium">Premium Level</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="4" placeholder="Pertanyaan Tambahan"></textarea>
+          </div>
+          <button type="submit" class="btn-brutal" style="width: 100%;">Daftar Sekarang</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 English Mastery. Semua Hak Dilindungi.</p>
+      <p style="margin-top: 10px;">Contact: 0812-3456-7890 | english@mastery.com</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const level = document.getElementById('level').value;
+      const phone = document.getElementById('phone').value;
+      const msg = `Halo, saya ${name} ingin daftar kursus ${level}. No WA: ${phone}`;
+      window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(msg)}`, '_blank');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Mastery | Design Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background: #f5f5f5; margin: 0; padding: 40px 20px; }
+    h1 { text-align: center; font-size: 32px; margin-bottom: 8px; }
+    .subtitle { text-align: center; color: #666; margin-bottom: 40px; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; max-width: 1400px; margin: 0 auto; }
+    .card { background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #e5e5e5; transition: transform .2s, box-shadow .2s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+    .preview { height: 280px; overflow: hidden; position: relative; background: #eee; }
+    .preview iframe { width: 200%; height: 200%; transform: scale(0.5); transform-origin: 0 0; border: none; pointer-events: none; }
+    .info { padding: 16px 20px; }
+    .info h2 { font-size: 16px; margin: 0 0 4px; }
+    .info p { font-size: 13px; color: #888; margin: 0 0 12px; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; margin-right: 6px; }
+    .btn { display: block; text-align: center; padding: 10px; background: #111; color: #fff; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: opacity .15s; }
+    .btn:hover { opacity: 0.85; }
+    .tag-warm { background: #fff3e0; color: #e65100; }
+    .tag-dark { background: #e3f2fd; color: #1565c0; }
+    .tag-clean { background: #e8f5e9; color: #2e7d32; }
+    .tag-editorial { background: #fce4ec; color: #c62828; }
+    .tag-tech { background: #f3e5f5; color: #6a1b9a; }
+    .tag-bold { background: #fff9c4; color: #f57f17; }
+  </style>
+</head>
+<body>
+  <h1>English Mastery Design Gallery</h1>
+  <p class="subtitle">12 design variants — klik untuk melihat full page</p>
+
+  <div class="gallery">
+    <div class="card">
+      <div class="preview"><iframe src="index-notion.html"></iframe></div>
+      <div class="info">
+        <h2>Notion</h2>
+        <p>Warm minimalism, content-first</p>
+        <span class="tag tag-warm">WARM</span>
+        <a href="index-notion.html" target="_blank" class="btn" style="margin-top:12px;">View Full</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview"><iframe src="index-mintlify.html"></iframe></div>
+      <div class="info">
+        <h2>Mintlify</h2>
+        <p>Clean, reading-optimized</p>
+        <span class="tag tag-clean">CLEAN</span>
+        <a href="index-mintlify.html" target="_blank" class="btn" style="margin-top:12px;">View Full</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview"><iframe src="index-vercel.html"></iframe></div>
+      <div class="info">
+        <h2>Vercel</h2>
+        <p>Black & white precision</p>
+        <span class="tag tag-dark">MINIMAL</span>
+        <a href="index-vercel.html" target="_blank" class="btn" style="margin-top:12px;">View Full</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview"><iframe src="index-stripe.html"></iframe></div>
+      <div class="info">
+        <h2>Stripe</h2>
+        <p>Premium trust, fintech polish</p>
+        <span class="tag tag-editorial">PREMIUM</span>
+        <a href="index-stripe.html" target="_blank" class="btn" style="margin-top:12px;">View Full</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview"><iframe src="index-linear.html"></iframe></div>
+      <div class="info">
+        <h2>Linear</h2>
+        <p>Dark precision, engineered</p>
+        <span class="tag tag-tech">TECH</span>
+        <a href="index-linear.html" target="_blank" class="btn" style="margin-top:12px;">View Full</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview"><iframe src="index-framer.html"></iframe></div>
+      <div class="info">
+        <h2>Framer</h2>
+        <p>Cinematic dark, bold</p>
+        <span class="tag tag-bold">BOLD</span>
+        <a href="index-framer.html" target="_blank" class="btn" style="margin-top:12px;">View Full</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview"><iframe src="index-apple.html"></iframe></div>
+      <div class="info">
+        <h2>Apple</h2>
+        <p>Cinematic whitespace</p>
+        <span class="tag tag-clean">LUXURY</span>
+        <a href="index-apple.html" target="_blank" class="btn" style="margin-top:12px;">View Full</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview"><iframe src="index-claude.html"></iframe></div>
+      <div class="info">
+        <h2>Claude</h2>
+        <p>Warm terracotta, editorial</p>
+        <span class="tag tag-warm">EDITORIAL</span>
+        <a href="index-claude.html" target="_blank" class="btn" style="margin-top:12px;">View Full</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview"><iframe src="index-supabase.html"></iframe></div>
+      <div class="info">
+        <h2>Supabase</h2>
+        <p>Dark emerald, dev-first</p>
+        <span class="tag tag-tech">DEV</span>
+        <a href="index-supabase.html" target="_blank" class="btn" style="margin-top:12px;">View Full</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview"><iframe src="index-webflow.html"></iframe></div>
+      <div class="info">
+        <h2>Webflow</h2>
+        <p>Blue-accented, polished</p>
+        <span class="tag tag-clean">MARKETING</span>
+        <a href="index-webflow.html" target="_blank" class="btn" style="margin-top:12px;">View Full</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview"><iframe src="index-modern.html"></iframe></div>
+      <div class="info">
+        <h2>Editorial Modern</h2>
+        <p>Serif headlines, warm tones</p>
+        <span class="tag tag-editorial">ACADEMIC</span>
+        <a href="index-modern.html" target="_blank" class="btn" style="margin-top:12px;">View Full</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview"><iframe src="index.html"></iframe></div>
+      <div class="info">
+        <h2>Neo-Brutalist</h2>
+        <p>Thick borders, hard shadows</p>
+        <span class="tag tag-bold">BRUTAL</span>
+        <a href="index.html" target="_blank" class="btn" style="margin-top:12px;">View Full</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
